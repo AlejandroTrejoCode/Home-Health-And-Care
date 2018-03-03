@@ -19,6 +19,10 @@ a {
     flex-direction: row;
 }
 
+.btn-blue {
+    
+}
+
 header {
     width: 100%;
     height: inherit;
@@ -195,6 +199,43 @@ nav {
 
 .nav-item a:hover {
     color: #196bd7;
+}
+
+.banner {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/BannerBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins";
+}
+
+.legends {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.legend, .sublegend {
+    width: 100%;
+}
+
+.banner .legends h1 {
+    font-size: 3em;
+    color: #002e8d;
+}
+
+.banner .sublegend h2 {
+    color: #3c78ff;
+    font-weight: 500;
+}
+
+.banner .sublegend h3 {
+    color: #739eff;
+    font-weight: 400;
+    font-size: 1em;
 }
 
 
