@@ -7,6 +7,25 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
+body {
+    background-color: #f7fafb;
+}
+
+.title h2 {
+    color: #3c78ff;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+p {
+    color: #6d7a8c;
+    text-align: justify;
+}
+
 .container {
     width: 85%;
     height: inherit;
@@ -19,8 +38,23 @@ a {
     flex-direction: row;
 }
 
+.column {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
 .btn-blue {
-    
+    background-color: rgba(0, 91, 211, 0.95);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Open Sans";
+    border-radius: 3px;
+    padding: 18px 28px;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 600;
 }
 
 header {
@@ -203,13 +237,14 @@ nav {
 
 .banner {
     width: 100%;
-    height: 550px;
+    height: 600px;
     display: flex;
     justify-content: center;
     background-image: url(../img/BannerBackground.jpg);
     background-size: cover;
     background-position: center;
     font-family: "Poppins";
+    background-repeat: no-repeat;
 }
 
 .legends {
@@ -236,17 +271,418 @@ nav {
     color: #739eff;
     font-weight: 400;
     font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.btn-banner {
+    margin: 20px 0;
+}
+
+.quick-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    color: #ffffff;
+    margin: -100px 0 30px 0;
+    background-color: #f7fafb;
+}
+
+.quick-card {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    background-color: #085dce;
+    padding: 20px;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.quick-card:hover {
+    background-color: #0051bb;
+    box-shadow: 0 0 40px rgba(0,0,0,.12);
+}
+
+.quick-card:nth-child(even) {
+    background-color: #0051bb;
+}
+
+.quick-card:nth-child(even):hover {
+    background-color: #085dce;
+}
+
+.quick-card > * {
+    padding: 5px 0;
+}
+
+.quick-card .icon img {
+    height: 60px;
+}
+
+.quick-card .title h3 {
+    font-weight: 500;
+}
+
+.quick-card  .description p{
+    font-size: 0.9em;
+    font-weight: 300;    
+    text-align: justify;
+    line-height: 1.3em;
+    color: #ccc;
+}
+
+.about {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    background-color: #f7fafb;
+    font-family: "Poppins";
+}
+
+.about .left {
+    width: 45%;
+    height: inherit;
+}
+
+.about p, .about li {
+    color: #6d7a8c;
+    text-align: justify;
+}
+
+.about li {
+    padding: 0 15px;
+}
+
+.about li i {
+    padding: 0 10px;
+}
+
+.about .right {
+    width: 55%;
+    height: inherit;
 }
 
 
+.about .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
-@media screen and (max-width: 1200px) {
+.about .right .video {
+    width: 90%;
+    height: 400px;
+    background-color: #f7f7f7;
+    box-shadow: 0 25px 50px rgba(0,0,0,.20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-play {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #005bd3;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.btn-play:hover {
+    width: 65px;
+    height: 65px;
+    background-color: #085dce;
+}
+
+.services {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/ServicesBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: "Poppins";
+}
+
+.services .left {
+    width: 25%;
+    padding: 30px 0;
+}
+
+.medical-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #448aff;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.medical-card .title, .medical-card-item {
+    width: 80%;
+}
+
+.medical-card-item {
+    padding: 20px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.medical-card-item a{
+    color: #fff;
+}
+
+.medical-card .title h3 {
+    font-weight: 600;
+}
+
+.medical-card .btn-blue {
+    margin: 20px 0 0 0;
+    border: 1px solid white;
+    background-color: #448aff;
+    transition: all 0.5s;
+}
+
+.medical-card .btn-blue:hover {
+    background-color: #fff;
+    color: #0051bb;
+}
+
+.services .right {
+    width: 75%;
+    padding: 30px 0;
+}
+
+.services-cards {
+    width: 100%;
+    display: flex;
+    padding-bottom: 30px;
+    justify-content: space-around;
+}
+
+.services-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    background: white;
+    box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.3);
+    transition: all 0.5s;
+}
+
+.services-card:hover {
+    width: 30.1%;
+    box-shadow: 0px 10px 40px 0px rgba(0,0,0,0.5);
+}
+
+.services-card  .thumbnail {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.services-card .title {
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.services-card .title, .services-card .description {
+    width: 90%;
+}
+
+.services-card .description {
+    padding: 10px 0;
+}
+
+.services-card .title h3{
+    font-weight: 500;
+}
+
+.services-card .description p {
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+.services .right .view-all-services {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.services .right .view-all-services .btn-blue {
+    border: 1px solid gray;
+    background-color: #448aff;
+    transition: all 0.5s;
+}
+
+.services .right .view-all-services .btn-blue:hover {
+    background-color: #fff;
+    color: #0051bb;
+}
+
+.gallery {
+    width: 100%;
+    height: auto;
+    padding: 30px 0 40px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    font-family: "Poppins";
+}
+
+.gallery .title {
+    width: 100%;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-grid .row {
+    flex-direction: row;
+}
+
+.gallery-grid .row img {
+    width: 50%;
+    padding: 10px;
+}
+
+.testimonials {
+    padding: 30px 0;
+    background-color: #f7f7f7;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.testimonials-slider {
+    display: flex;
+}
+
+.testimonials .container .row {
+    flex-direction: column;
+}
+
+.testimonials .titles, .testimonials .title {
+    width: 100%;
+}
+
+.testimonials .title h2 {
+    text-align: center;
+}
+
+.testimonials .description p {
+    text-align: center;
+}
+
+.testimonial {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px; 
+}
+
+
+.testimonial .case, .testimonial .name {
+    background-color: #ffffff;
+    padding: 15px 30px;
+}
+
+.testimonial .case p, .testimonial .name p {
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.testimonial .name p {
+    font-weight: bold;
+}
+
+
+.contact {
+    padding: 30px 0;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+
+.contact .left, .contact .right {
+    width: 50%;
+    padding: 20px 0;
+}
+
+.accordion {
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgray; 
+    outline: none;
+    text-align: left;
+    padding: 18px;
+    color: #6d7a8c;
+    font-size: 1em;
+    font-family: "Poppins";
+    transition: all 0.5s;
+}
+
+.active, .accordion:hover {
+    background-color: #ecf1f8;
+    color: #3c78ff;
+}
+
+.panel-accordion {
+    padding: 0px 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ecf1f8;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+
+.panel-accordion p {
+    font-size: 0.9em;
+    padding: 20px 0;
+}
+
+.form {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+form {
+    width: 90%;
+    height: inherit;
+    box-shadow: 0 5px 10px rgba(0,0,0,.20);
+}
+
+input, button, textarea {
+    font-family: "Poppins";
+}
+
+
+/* Super Large Screens */
+
+@media screen and (min-width: 1440px) {
+    
     
 }
 
 @media screen and (max-width: 992px) {
     body {
-        background-color: blue;
+        /* background-color: blue; */
     }
     
     .container {
@@ -264,11 +700,24 @@ nav {
     .social {
         display: none;
     }
+    
+    .about .right .video {
+        height: 330px;
+    }
+    
+    .about .left ul {
+        padding: 0 0 30px 0;
+    }
+    
+    .services .container {
+        width: 95%;
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
     body {
-        background-color: darkseagreen;
+        /* background-color: darkseagreen; */
     }
     
     .header-top-left {
@@ -298,11 +747,139 @@ nav {
     .nav-item a {
         font-size: 0.9em;
     }
+    
+    .banner .legends h1 {
+        font-size: 2.5em;
+    }
+
+    .banner .sublegend h2 {
+        font-size: 1.5em;
+    }
+
+    .banner .sublegend h3 {
+        font-size: 0.9em;
+        margin-bottom: 10px;
+    }
+    
+    .quick-cards {
+        margin: 0;
+    }
+    
+    .quick-cards .container {
+        width: 100%;
+    }
+    
+    .quick-card .title h3 {
+        font-size: 1em;
+    }
+    
+    .quick-card .description p {
+        font-size: 0.8em;
+    }
+    
+    .about {
+        padding-bottom: 30px;
+    }
+    
+    .about p, .about li {
+        font-size: 0.9em;
+    }
+    
+    .about .container .row{
+        flex-direction: column;
+    }
+    .about .left {
+        width: 100%;
+    }
+    
+    .about .right {
+        width: 100%;
+    }
+    
+    .about .right .video {
+        width: 100%;
+        height: 300px;
+    }
+    
+    .services .container {
+        width: 100%;
+    }
+    
+    .services .container .column .titles > * {
+        width: 95%;
+        margin: auto;
+    }
+    
+    .services .container .row {
+        flex-direction: column;
+    }
+    
+    .services .left {
+        width: 100%;
+        order: 2;
+    }
+    
+    .services .right {
+        width: 100%;
+        order: 1;
+    }
+    
+    .services-card {
+        width: 32%;
+    }
+    
+    .services-card:hover {
+        width: 32%;
+    }
+    
+    .services-card .description p {
+        font-size: 0.8em;
+    }
+    
+    .medical-card {
+        padding: 20px 0;
+    }
+    
+    .gallery-grid .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .gallery-grid .row img {        
+        padding: 4px;
+        width: 48%;
+    }
+    
+    .testimonials-slider {
+        justify-content: center;
+    }
+    
+    .testimonial {
+        padding: 30px 5px;
+        width: 100%;
+    }
+    
+    .testimonial .case p, .testimonial .name p {
+        font-size: 0.8em;
+    }
+    
+    .contact .container {
+        width: 96%;
+    }
+    
+    .contact .container .column .row{
+        flex-direction: column;
+    }
+    
+    .contact .left, .contact .right {
+        width: 100%;
+    }
+    
 }
 
 @media screen and (max-width: 576px) {
     body {
-        background-color: gray;
+        /*background-color: gray; */
     }
     
     header {
@@ -368,6 +945,76 @@ nav {
     .nav-item {
         height: auto;
         padding: 10px 0px;
+    }
+    
+    .banner .legends h1 {
+        font-size: 2em;
+    }
+
+    .banner .sublegend h2 {
+        font-size: 1.2em;
+        text-shadow: 0px 1px 1px #3c78ff;
+    }
+
+    .banner .sublegend h3 {
+        font-size: 0.9em;
+        text-shadow: 0px 1px 1px #739eff;
+    }
+    
+    .quick-cards .row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .quick-card {
+        width: 36%;
+        background-color: #0051bb;
+    }
+    
+    .quick-card:hover {
+        background-color: #085dce;
+    }
+    
+    .services .container {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .services-cards {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .services-card {
+        width: 90%;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    
+    .services-card:hover {
+        width: 90%;
+    }
+    
+    .medical-card-item {
+        padding: 15px 0;
+    }
+    
+    .gallery .container {
+        width: 98%;
+    }
+    
+    .gallery-grid .row img {        
+        padding: 4px;
+        width: 46%;
+    }
+    
+    .testimonials-slider {
+        flex-direction: column;
+    }
+    
+    .testimonial {
+        padding: 10px 0;
     }
     
 }
