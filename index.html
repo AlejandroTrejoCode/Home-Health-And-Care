@@ -13,7 +13,15 @@
 </head>
 
 <body onresize="resize()">
-    
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=867975343321980&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
     <header>
         <div class="header-top">
             <div class="container">
@@ -505,25 +513,28 @@
                             <form action="" method="">
                                 <div class="container">
                                     <div class="column">
-                                        <div class="row">
-                                            <input type="text" name="name" placeholder="Nombre">
-                                            <input type="text" name="phone" placeholder="Teléfono">
+                                        <div class="title">
+                                            <h2>Envíanos un mensaje</h2>
                                         </div>
                                         <div class="row">
-                                            <input type="email" name="email" placeholder="E-Mail">
-                                            <select name="services" id="">
-                                                <option value="None">Servicios</option>
+                                            <input type="text" name="name" placeholder="Nombre" id="name">
+                                            <input type="text" name="phone" placeholder="Teléfono" id="phone">
+                                        </div>
+                                        <div class="row">
+                                            <input type="email" name="email" placeholder="E-Mail" id="email">
+                                            <select name="services" id="select">
+                                                <option value="None">Selecciona Servicio</option>
                                                 <option value="Enfermería">Enfermería</option>
                                             </select>
                                         </div>
                                         <div class="row">
-                                            <input type="text" name="address" placeholder="Ubicación">
-                                            <button class="btn-blue">COMPARTIR UBICACIÓN</button>
+                                            <input type="text" name="address" placeholder="Ubicación" id="address">
+                                            <button class="btn-blue" id="location">COMPARTIR UBICACIÓN</button>
                                         </div>
                                         <div class="row">
-                                            <textarea name="message" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                                            <textarea name="message" id="message" rows="3" placeholder="Mensaje"></textarea>
                                         </div>
-                                        <div class="row">
+                                        <div class="row" id="lastrow">
                                             <input type="submit" class="btn-blue">
                                         </div>
                                     </div>
@@ -535,6 +546,41 @@
             </div>
         </div>
     </div>
+    
+    <div class="jobs">
+        <div class="container">
+            <div class="row">
+                <div class="work-with-us">
+                    <h3>
+                        ¿Te interesa trabajar con nosotros? Escríbenos a: <span>equipo@homehealthcare.com</span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="column">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="footer-logo">
+                            <img src="img/Logo%20HHC.png" alt="">
+                        </div>
+                        <div class="facebook-frame">
+                            <div class="fb-page" data-href="https://www.facebook.com/hhchomehealthandcare/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/hhchomehealthandcare/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/hhchomehealthandcare/">Home Health &amp; Care</a></blockquote></div>
+                        </div>
+                        <div class="twitter-frame">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
     
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>    
