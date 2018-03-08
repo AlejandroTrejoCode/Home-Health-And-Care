@@ -755,6 +755,7 @@ footer {
     background-color: #fff;
     display: flex;
     justify-content: center;
+    font-family: "Poppins";
 }
 
 .footer-logo, .facebook-frame, .twitter-frame {
@@ -765,6 +766,96 @@ footer {
 .footer-logo img{
     width: 50%;
 }
+
+
+/* Renta */
+
+.renta-banner {
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    background-color: #002e8d;
+    font-family: "Poppins";
+    color: #fff;
+}
+
+.renta-banner .left {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.renta-banner .left .titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.renta-banner .left .titles h2 {
+    font-size: 2em;
+    width: 100%;
+}
+
+.renta-banner .left .titles h3 {
+    font-weight: 500;
+    width: 60%;
+    text-align: justify;
+}
+
+.renta-banner .right {
+    width: 40%;
+    height: inherit;
+    background-image: url(../img/BannerPages.jpg);
+    background-size: cover;
+}
+
+.cart {
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+    padding: 30px 0;
+}
+
+.cart .container .row {
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.cart .container .row .item {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px lightgray;
+}
+
+.cart .container .row .item .image {
+    display: flex;
+}
+
+.cart .container .row .item .image img {
+    width: 100%;
+}
+
+.cart .container .row .item .description {
+    border-top: 1px solid lightgray;
+    display: flex;
+    justify-content: center;
+}
+
+.cart .container .row .item .description p {
+    width: 85%;
+    font-size: 0.8em;
+    padding: 20px 0;
+}
+
+.cart .container .row .item .description span {
+    font-weight: bold;
+}
+
+/* Fin Renta */
 
 /* Super Large Screens */
 
@@ -869,6 +960,14 @@ footer {
     
     #lastrow {
         margin-bottom: 10px;
+    }
+    
+    .renta-banner .left {
+        width: 100%;
+    }
+    
+    .renta-banner .right {
+        display: none;
     }
     
 }
@@ -1203,6 +1302,44 @@ footer {
     
     #location {
         font-size: 0.7em;
+    }
+    
+    
+    .renta-banner .titles, .renta-banner .titles h3 {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .renta-banner .titles {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .renta-banner .titles h2 {
+        width: 100%;
+    }
+    
+    .renta-banner .left .titles h3 {
+        width: 100%;
+    }
+    
+    .cart .container .row {
+        flex-direction: column;
+    }
+    
+    .cart .container .row .item {
+        width: 100%;
+        margin: 10px 0;
+    }
+    
+    .footer-bottom {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-bottom .container p {
+        text-align: center;
     }
     
 }
