@@ -487,6 +487,11 @@ nav {
     justify-content: center;
 }
 
+.services-card  .thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
 .services-card .title {
     padding: 10px 0;
     border-bottom: 1px solid lightgray;
@@ -549,8 +554,15 @@ nav {
     flex-direction: row;
 }
 
+.gallery-grid .row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .gallery-grid .row img {
-    width: 50%;
+    width: 90%;
+    height: auto;
     padding: 10px;
 }
 
@@ -761,6 +773,7 @@ footer {
 .footer-logo, .facebook-frame, .twitter-frame {
     width: 33%;
     display: flex;
+    align-items: center;
 }
 
 .footer-logo img{
@@ -866,7 +879,15 @@ footer {
     }
     
     form {
-        width: auto;  
+    
+    }
+    
+    form .title h2 {
+        width: 98%;
+    }
+    
+    #lastrow .btn-blue {
+        width: 98%;
     }
     
     form .container .column .row{
@@ -1102,9 +1123,8 @@ footer {
         justify-content: center;
     }
     
-    .gallery-grid .row img {        
-        padding: 4px;
-        width: 48%;
+    .gallery-grid .row img {
+        padding: 0px;
     }
     
     .testimonials-slider {
@@ -1277,7 +1297,6 @@ footer {
     
     .gallery-grid .row img {        
         padding: 4px;
-        width: 46%;
     }
     
     .testimonials-slider {
