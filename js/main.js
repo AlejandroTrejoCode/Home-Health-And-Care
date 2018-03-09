@@ -34,3 +34,15 @@ for (i = 0; i < acc.length; i++) {
     } 
   });
 }
+
+$(".nav-item a").on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            hash = this.hash;
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+            window.location.hash = hash;
+          });
+        }
+    });
