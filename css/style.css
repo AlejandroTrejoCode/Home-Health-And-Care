@@ -1369,17 +1369,18 @@ footer {
     }
     
     .banner .legends {
-        margin-top: -130px;
+        width: 80%;
+        margin-top: -150px;
     }
     
     .banner .sublegend h2{
         color: #002e8d;
-        font-weight: bold;
+        font-weight: 600;
     }
     
     .banner .sublegend h3 {
         color: black;
-        font-weight: bold;
+        font-weight: 600;
     }
     
 }
