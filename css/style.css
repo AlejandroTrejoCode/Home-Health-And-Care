@@ -1248,13 +1248,12 @@ footer {
     }
 
     .banner .sublegend h2 {
-        font-size: 1.2em;
-        text-shadow: 0px 1px 1px #3c78ff;
+        font-size: 1.2em;        
     }
 
     .banner .sublegend h3 {
         font-size: 0.9em;
-        text-shadow: 0px 1px 1px #739eff;
+        color: rgba(0, 91, 211, 0.95);
     }
     
     .quick-cards .row {
@@ -1364,6 +1363,14 @@ footer {
     
     .footer-bottom .container p {
         text-align: center;
+    }
+    
+    .banner .sublegend h2{
+        color: #002e8d;
+    }
+    
+    .banner .sublegend h3 {
+        color: black;
     }
     
 }
