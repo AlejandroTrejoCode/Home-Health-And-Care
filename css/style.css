@@ -111,7 +111,12 @@ header {
 .logo-mobile {
     display: none;
 }
-
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    display: none;
+}
 .header-top-right {
     width: 35%;
     height: inherit;

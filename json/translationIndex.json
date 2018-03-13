@@ -1,0 +1,58 @@
+{
+	"spanish":{
+		"menu": {
+			"nosotros" : "Nosotros",
+			"servicios" : "Servicios",
+			"galeria" : "Galería",
+			"casos": "Casos de éxito",
+			"contacto": "Contacto"
+		},
+		"seccion1":{
+			"subtitulo": "Tu salud es nuestra prioridad",
+			"parrafo": "Cuidamos tu salud, cuidamos tu bienestar",
+			"boton": "CONÓCENOS",
+			"tarjetas": [
+				{
+					"titulo": "Asistencia y Cuidado"
+				},
+				{
+					"titulo": "Equipo Médico"
+				},
+				{
+					"titulo": "Seguridad y Confianza"
+				},
+				{
+					"titulo": "Garantía"
+				}
+			]
+		}
+	},
+	"english": {
+		"menu": {
+			"nosotros" : "About us",
+			"servicios" : "Services",
+			"galeria" : "Gallery",
+			"casos": "Success stories",
+			"contacto": "Contact"
+		},
+		"seccion1":{
+			"subtitulo": "Your health, is our priority",
+			"parrafo": "We take care of your health, We take care of your wellness",
+			"boton": "ABOUT US",
+			"tarjetas": [
+				{
+					"titulo": "Asistance and Care"
+				},
+				{
+					"titulo": "Medical equipment"
+				},
+				{
+					"titulo": "Safety y Confidence"
+				},
+				{
+					"titulo": "Warranty"
+				}
+			]
+		}
+	}
+}

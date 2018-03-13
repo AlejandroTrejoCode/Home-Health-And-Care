@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="css/hover-min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">  
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>  
 </head>
 
 <body onresize="resize()">
-    <header>
         <div class="header-top">
             <div class="container">
                 <div class="row">
@@ -41,8 +41,8 @@
                     </div>
                     <!-- End Responsive Menu Left -->
                     <div class="header-top-right">
-                        <div class="language">
-                            <div class="language-icon">
+                        <div class="language" onclick="translating()">
+                            <div class="language-icon" >
                                 <img src="img/en.png" alt="EN Flag">
                             </div>
                             <a class="language-change" href="#">EN</a>
@@ -71,19 +71,19 @@
                     <div class="header-bottom-right" id="header-bottom-right">
                         <nav>
                             <div class="nav-item hvr-underline-from-center">
-                                <a href="#about">Nosotros</a>
+                                <a href="#about" id="about">Nosotros</a>
                             </div>
                             <div class="nav-item hvr-underline-from-center">
-                                <a href="#services">Servicios</a>
+                                <a href="#services" id="services">Servicios</a>
                             </div>
                             <div class="nav-item hvr-underline-from-center">
-                                <a href="#gallery">Galería</a>
+                                <a href="#gallery" id="gallery">Galería</a>
                             </div>
                             <div class="nav-item hvr-underline-from-center">
-                                <a href="#cases">Casos de éxito</a>
+                                <a href="#cases" id="cases">Casos de éxito</a>
                             </div>
                             <div class="nav-item hvr-underline-from-center">
-                                <a href="#contact">Contacto</a>
+                                <a href="#contact" id="contact">Contacto</a>
                             </div>
                         </nav>
                     </div>
@@ -104,15 +104,15 @@
                         </h1> 
                     </div>
                     <div class="sublegend">
-                        <h2>
+                        <h2 id="seccion1-subtitulo">
                             Tu salud es nuestra prioridad
                         </h2>
-                        <h3>
+                        <h3 id="seccion1-parrafo">
                             Cuidamos tu salud, cuidamos tu bienestar
                         </h3>
                     </div>
                     <div class="btn-banner">
-                        <a href="#about" class="btn-blue">
+                        <a href="#about" class="btn-blue" id="seccion1-button">
                             Conócenos
                         </a>  
                     </div>                                
@@ -466,13 +466,34 @@
                             </p>
                         </div>
                     </div> 
-                        
+                    <div class="testimonial">
+                        <div class="case">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolores fugiat accusantium. Expedita reiciendis excepturi quo iusto doloribus harum beatae ipsum tempore at eligendi autem, animi hic, facilis magnam laudantium?
+                            </p>
+                        </div>
+                        <div class="name">
+                            <p>
+                                Jonh Doe Azbar
+                            </p>
+                        </div>
+                    </div> 
+                    <div class="testimonial">
+                        <div class="case">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem dolores fugiat accusantium. Expedita reiciendis excepturi quo iusto doloribus harum beatae ipsum tempore at eligendi autem, animi hic, facilis magnam laudantium?
+                            </p>
+                        </div>
+                        <div class="name">
+                            <p>
+                                Jonh Doe Azbar
+                            </p>
+                        </div>
+                    </div>    
                 </div>
             </div>
         </div>
     </div>
-    
-    
     <div class="contact" id="contact">
         <div class="container">
             <div class="column">
@@ -536,7 +557,10 @@
                                         </div>
                                         <div class="row">
                                             <input type="text" name="address" placeholder="Ubicación" id="address">
-                                            <button class="btn-blue" id="location">COMPARTIR UBICACIÓN</button>
+                                            <button type="button" class="btn-blue" id="location" onclick="getLocation()">COMPARTIR UBICACIÓN</button>
+                                        </div>
+                                        <div class="row">
+                                            <div id="map"></div>    
                                         </div>
                                         <div class="row">
                                             <textarea name="message" id="message" rows="3" placeholder="Mensaje"></textarea>
@@ -575,7 +599,7 @@
                             <img src="img/Logo%20HHC.png" alt="">
                         </div>
                         <div class="facebook-frame">
-                            
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fhhchomehealthandcare%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1985581661658241" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
                         </div>
                         <div class="twitter-frame">
                             
@@ -587,10 +611,16 @@
                 </div>
             </div>
         </div>
+
     </footer>
-    
+
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDC8QL1fAe4AwYy62BZluG2_r57RUhwKeM">
+    </script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>    
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
 </body>
 </html>
