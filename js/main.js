@@ -4,6 +4,7 @@ new WOW().init();
 var menu = document.getElementById("menu");
 var languajes; 
 var translation = false; 
+var video = document.getElementById("video"); 
 $(document).ready(function(){
   $('.testimonials-slider').slick({
     autoplay: true,
@@ -24,7 +25,15 @@ $(document).ready(function(){
         languajes = data
     });
 });
+function playVideo(){
+    document.getElementById("play-button").style.display = "none";
+    video.play(); 
+}
+function pauseVideo(){
+    document.getElementById("play-button").style.display = "block";
+    video.pause(); 
 
+}
 function translating(){
     if(translation == false){
         lang = languajes.english

@@ -384,8 +384,11 @@ nav {
     justify-content: center;
     align-items: center;
 }
-
+#video{
+    width: 100%;
+}
 .btn-play {
+    position: absolute;
     width: 60px;
     height: 60px;
     border-radius: 50%;

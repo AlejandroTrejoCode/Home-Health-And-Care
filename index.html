@@ -236,7 +236,10 @@
                 </div>                   
                 <div class="right">
                     <div class="video">
-                        <button class="btn-play">
+                        <video id="video" autobuffer loop onclick="pauseVideo()" poster="./img/video-poster.png">
+                            <source src="./video/home.mp4" type="video/mp4" media="">
+                        </video>
+                        <button class="btn-play" id="play-button" onclick="playVideo()">
                             <i class="fa fa-play" aria-hidden="true"></i>
                         </button>
                    </div>
