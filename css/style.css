@@ -1365,12 +1365,18 @@ footer {
         text-align: center;
     }
     
+    .banner .legends {
+        margin-top: -130px;
+    }
+    
     .banner .sublegend h2{
         color: #002e8d;
+        font-weight: bold;
     }
     
     .banner .sublegend h3 {
         color: black;
+        font-weight: bold;
     }
     
 }
